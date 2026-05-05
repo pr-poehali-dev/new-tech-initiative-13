@@ -181,34 +181,46 @@ export default function Index() {
         className={`fixed inset-0 z-0 transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
         style={{ contain: "strict" }}
       >
-        <Shader className="h-full w-full">
-          <Swirl
-            colorA="#8b0000"
-            colorB="#1a0a0a"
-            speed={0.5}
-            detail={0.7}
-            blend={60}
-            coarseX={35}
-            coarseY={35}
-            mediumX={35}
-            mediumY={35}
-            fineX={30}
-            fineY={30}
-          />
-          <ChromaFlow
-            baseColor="#6b0000"
-            upColor="#3d0000"
-            downColor="#0d0d0d"
-            leftColor="#8b1a1a"
-            rightColor="#5a0000"
-            intensity={0.85}
-            radius={1.6}
-            momentum={20}
-            maskType="alpha"
-            opacity={0.96}
-          />
-        </Shader>
-        <div className="absolute inset-0 bg-black/20" />
+        {/* Фоновый коллаж — Великая Отечественная война (Wikimedia Commons) */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Great_Patriotic_War_collage.jpg/1280px-Great_Patriotic_War_collage.jpg)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0" style={{ mixBlendMode: "multiply" }}>
+          <Shader className="h-full w-full">
+            <Swirl
+              colorA="#8b0000"
+              colorB="#1a0a0a"
+              speed={0.5}
+              detail={0.7}
+              blend={60}
+              coarseX={35}
+              coarseY={35}
+              mediumX={35}
+              mediumY={35}
+              fineX={30}
+              fineY={30}
+            />
+            <ChromaFlow
+              baseColor="#6b0000"
+              upColor="#3d0000"
+              downColor="#0d0d0d"
+              leftColor="#8b1a1a"
+              rightColor="#5a0000"
+              intensity={0.85}
+              radius={1.6}
+              momentum={20}
+              maskType="alpha"
+              opacity={0.7}
+            />
+          </Shader>
+        </div>
       </div>
 
       <nav
