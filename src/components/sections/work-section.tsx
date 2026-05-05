@@ -15,32 +15,46 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Архив
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Ключевые сражения 1941–1945</p>
         </div>
 
-        <div className="space-y-6 md:space-y-8">
+        <div className="space-y-4 md:space-y-6">
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
+              title: "Битва за Москву",
+              category: "30 сентября 1941 — 7 января 1942 · Первая крупная победа СССР",
+              year: "1941–42",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
+              title: "Битва за Сталинград",
+              category: "17 июля 1942 — 2 февраля 1943 · Коренной перелом в войне",
+              year: "1942–43",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "Курская битва",
+              category: "5 июля — 23 августа 1943 · Крупнейшее танковое сражение в истории",
+              year: "1943",
+              direction: "left",
+            },
+            {
+              number: "04",
+              title: "Операция «Багратион»",
+              category: "23 июня — 19 августа 1944 · Освобождение Белоруссии",
+              year: "1944",
+              direction: "right",
+            },
+            {
+              number: "05",
+              title: "Берлинская операция",
+              category: "16 апреля — 2 мая 1945 · Штурм Берлина и Победа",
+              year: "1945",
               direction: "left",
             },
           ].map((project, i) => (

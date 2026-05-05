@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            Периоды
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Основные этапы войны</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "Оборонительный период",
+              description: "22 июня — декабрь 1941. Немецкое вторжение, отступление советских войск, битва за Москву — первая победа.",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Коренной перелом",
+              description: "1942–1943. Сталинградская битва и Курская дуга изменили ход войны, стратегическая инициатива перешла к СССР.",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Освобождение",
+              description: "1944. Операция «Багратион», Висло-Одерская операция — освобождение СССР и стран Восточной Европы.",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Победа",
+              description: "1945. Берлинская операция, взятие Берлина, безоговорочная капитуляция Германии 8–9 мая 1945 года.",
               direction: "bottom",
             },
           ].map((service, i) => (
