@@ -317,6 +317,16 @@ export default function Index() {
         <ContactSection />
       </div>
 
+      {/* Footer */}
+      <footer className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-between border-t border-foreground/10 bg-background/60 px-6 py-3 backdrop-blur-md md:px-12">
+        <p className="font-mono text-xs text-foreground/40">
+          © 2025 Архив 1941–1945
+        </p>
+        <p className="font-mono text-xs text-foreground/40">
+          Создатель: <span className="text-foreground/60">Александр Лысенко</span> · студент <span className="text-foreground/60">КИПТСУ</span>
+        </p>
+      </footer>
+
       <style>{`
         div::-webkit-scrollbar {
           display: none;
